@@ -1,0 +1,332 @@
+/* 
+      Typography
+16px // 20px // 24px // 30px // 64px
+
+
+     font-weight
+400 // 500 // 700
+
+    color
+primary   = 9769FF
+secondary = FFB662
+tertiary  = 392F4D
+reds      = FF0000
+greens    = 00FF09
+case-holder = F5F5F5
+white     = ffffff
+blacks    = 000000
+
+primary-tint = F5F5F5
+secondary-tint = FFDAB0
+primary-shade = 5B12FE
+secondary-shade = FA8906
+
+     font-family
+geological
+
+
+*/
+
+:root {
+    --primary-base: #9769FF;
+    --secondary-base:  #FFB662;
+    --tertiary-base: #392F4D;  
+    --reds: #ff0000;
+    --white: #ffffff;
+    --black: #000000;
+    --primary-tint: #cbb4ff;
+    --secondary-tint: #FFDAB0;
+    --primary-shade: #5B12FE;
+    --secondary-shade: #FA8906;
+    --case-holder: #f5f5f5;
+    --green: #00FF09;
+
+    --text-sm: 1.6rem;
+    --text-md: 2.0rem;
+    --text-h3: 2.4rem;
+    --text-h2: 3.0rem;
+    --text-h1: 6.4rem;
+
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-family: 'Geologica', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Geologica', sans-serif;
+} 
+
+body{
+    background-color: var(--white);
+    background-color: var(--primary-tint);
+    box-sizing: border-box;
+}
+
+
+.container {
+   height: 100vh;
+   max-width: 1200px; 
+   width: 90%;
+   margin: 0px auto;
+   background-color: var(--primary-tint);
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+}
+
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18rem;
+    align-self: flex-start;
+    margin-top: 5.0rem;
+    /* padding-top: 2.0rem; */
+    justify-content: start;
+    margin-bottom: 3.0rem;
+}
+
+.questions {
+    font-size: 2.4rem;
+    color: var(--primary-shade);
+   
+}
+
+.timer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.241rem;
+    align-items: center;
+    background-color: var(--case-holder);
+    justify-content: center;
+    padding: 1.0rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    align-self: end;
+    margin-right: 2.0rem;
+    margin-top: 2.0rem;
+
+}
+
+.time {
+    max-width: 3.0rem;
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    padding: 5rem 8rem;
+    background: var(--secondary-shade);
+    align-self: center;
+    justify-self: start;
+    border-radius: 2.0rem;
+    /* margin-bottom: 5.0rem; */
+    mask-size: contain;
+    fill: var(--primary-shade);
+    box-shadow: 0px 3px 6px var(--tertiary-base);
+}
+
+.second-column{
+    align-self: flex-start;
+    margin-top: 10.0rem;
+}
+
+.displayed-questions{
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding: 0 3.0rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+.options {
+    font-size: 1.6rem;
+    padding: 0 3.0rem;
+    font-weight: 400;
+}
+
+.option-a {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--case-holder);
+    padding: 1rem 2rem;
+    border-radius: 1.0rem;
+    gap: 2.0rem;
+    margin-bottom: 2.5rem; 
+    align-items: center;
+    justify-self: stretch;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.option-a:hover, .option-a:active{
+    background-color: var(--secondary-base);
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px var(--tertiary-base);
+} 
+
+/* .option-a:disenabled {
+    background-color: var(--reds);
+    transform: scale(1.05, 1.05);
+} */
+
+.A , .B {
+    display: inline;
+    text-align: left
+}
+
+.option-icon-background{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--primary-tint);
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 4.0rem; */
+    font-size: 1.6rem;
+}
+
+.nav-btn-right {
+    fill: var(--primary-shade);
+    width: 3.0rem;
+    height: 3.0rem;
+    transition: 0.5s;
+}
+
+
+.submit-btn-right {
+    font-size: var(--text-sm);
+    background-color: var(--secondary-shade);
+    color: var(--white);
+    width: 8.0rem;
+    height: 4.0rem;
+    transition: 0.5s;
+    border-style: none;
+    letter-spacing: 0.2rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+ 
+.nav-btn-right:hover, .nav-btn-right:active {
+    fill: var(--secondary-shade);
+    transform: scale(1.05, 1.05);
+}
+
+.submit-btn-right:hover, .submit-btn-right:active {
+   background-color:  var(--green);
+    transform: scale(1.05, 1.05);
+}
+
+.shape {
+    /* position: relative; */
+    background-color: var(--primary-shade);
+    height: 10px;
+    border-radius: 30px 30px 0 0;
+}
+
+.shape-b{
+    position: fixed;
+    background-color: var(--secondary-shade);
+    height: 40px;
+    border-radius: 30px 30px 0 0;
+    z-index: 99;
+}
+
+/* LG - SMALL LAPTOPS: 1040PX - 1200PX */
+
+@media (max-width: 65rem) {
+    /* 1040px / 16px = 72rem */
+    /* 65rem * 16px = 1040px */
+
+
+    html{
+        font-size: 56.25%;
+    }
+}
+
+/* * MD - TABLETS: 768 - 1024 */ 
+
+@media (max-width: 54rem){
+     /* 860px / 16px = 54rem */
+    /* 54rem * 16px = 864px */
+
+
+    html{
+        font-size: 50%;
+    }
+}
+
+/* SM  phone landscape: 568 - 768 */
+
+@media (max-width: 47rem){
+    /* 750px / 16px = 47rem*/
+    /* 47rem * 16px = 752px */
+
+    html{
+        font-size: 44%;
+    }
+    
+}
+
+
+/* SM  phone portrait: < 568 */
+
+@media (max-width: 36rem){
+    /* 530px / 16px = 40rem*/
+    /* 34rem * 16px = 544px */
+
+    html{
+        font-size: 37%;
+    }
+
+    .images {
+        justify-self: center;
+        margin-top: 5rem;
+        width: 30em;
+        height: 30rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-column {
+        margin-top: 10rem;
+        align-self: center;
+    }
+
+    .first-column {
+        margin-bottom: 0;
+        height: auto
+    }
+}

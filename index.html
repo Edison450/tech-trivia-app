@@ -29,20 +29,23 @@
                 <p class="displayed-questions">1. What was the first computer virus to spread widely in the wild?</p>
             </section>
             <section >
-               <div class="options">
-                   <button onclick=" click(); " class="option-a js-click">
+               <div class="options js-options">
+                   <button id="A" onclick="checkAnswer(this);" class="option-a js-option-a">
                          <div class="option-icon-background"><p class="A">A</p></div>
                         <p class="B">ILOVEYOU</p>
                    </button>
-                    <button onclick="console.log('working');" class="option-a">
+
+                    <button id="B" onclick="checkAnswer(this);" class="option-a">
                              <div class="option-icon-background"><p  class="A">B</p></div>  
                             <p class="B">Brain</p>
                     </button>
-                    <button onclick="console.log('working');" class="option-a">
+
+                    <button id="c" onclick="checkAnswer(this);" class="option-a">
                         <div class="option-icon-background"><p class="A">C</p></div>
                         <p class="B">Melissa</p>
                     </button>
-                   <button onclick="console.log('working');" class="option-a">
+
+                   <button id="D" onclick="checkAnswer(this);" class="option-a">
                              <div class="option-icon-background"><p class="A">D</p></div>  
                             <p class="B">Stuxnet</p>
                    </button>

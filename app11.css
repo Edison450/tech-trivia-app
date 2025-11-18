@@ -67,7 +67,7 @@ body{
 .display-scored{
     margin-top: 3rem;
     background-color: var(--tertiary-base);
-    font-size:7.0rem;
+    font-size:6rem;
     width: 20rem;
     height: 20rem;
     padding: 3.0rem;
@@ -87,6 +87,14 @@ body{
     color: var(--primary-base);
     font-family: 500;
 }
+
+.scores {
+    font-size: 3.0rem;
+    color: var(--white);
+    font-family: 500;
+}
+
+
 
 ul {
     list-style: none;
@@ -145,6 +153,21 @@ button {
     align-items: center;
     margin-top: 4rem;
 
+}
+
+.restart {
+    margin-top: 10rem;
+    grid-template-columns: 1fr;
+    margin-left: 7rem;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 400;
+    background-color: var(--primary-base);
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    
 }
 
 
